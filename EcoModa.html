@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoModa | Tienda Sostenible</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Encabezado principal -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">EM</div>
+        <div class="brand-text">
+          <span class="brand-name">EcoModa</span>
+          <small class="brand-tag">Tienda Sostenible</small>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#videos">Videos</a>
+        <a href="#articles">Artículos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección principal -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="site-title">EcoModa</h1>
+        <p class="site-sub fade-in">Moda ecológica para un mundo mejor 🌎💚</p>
+      </div>
+    </section>
+
+    <!-- Sección de búsqueda (criterio Sprint 2) -->
+    <section id="search" class="container search-section">
+      <form class="search-form" onsubmit="event.preventDefault(); alert('Búsqueda demo: ' + document.getElementById('q').value)">
+        <input id="q" type="search" placeholder="Buscar artículos..." aria-label="Buscar artículos"/>
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <!-- Sección de videos con subtítulos (accesibilidad Sprint 2) -->
+    <section id="videos" class="container cards">
+      <h2>Videos</h2>
+      <p class="muted">Material audiovisual informativo sobre moda sostenible.</p>
+      <div class="card-grid">
+        <article class="card">
+          <video controls width="100%" preload="metadata">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+            <track src="subtitulos_intro.vtt" kind="subtitles" srclang="es" label="Español">
+            Tu navegador no soporta video.
+          </video>
+          <h3>Introducción a la moda sostenible</h3>
+          <p class="muted small">Duración: 2:13 · Subtítulos: disponibles</p>
+        </article>
+        <article class="card">
+          <video controls width="100%" preload="metadata">
+            <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            <track src="subtitulos_reutiliza.vtt" kind="subtitles" srclang="es" label="Español">
+            Tu navegador no soporta video.
+          </video>
+          <h3>Reutiliza y renueva</h3>
+          <p class="muted small">Duración: 1:45 · Subtítulos: disponibles</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de artículos -->
+    <section id="articles" class="container cards">
+      <h2>Artículos</h2>
+      <p class="muted">Lecturas recomendadas para cuidar tu armario y el planeta.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Moda ecológica: ¿por qué importa?</h3>
+          <p>Pequeños cambios en tu consumo generan grandes beneficios para el medio ambiente. Aprende cómo elegir con intención.</p>
+          <a class="readmore" href="#">Leer más</a>
+        </article>
+        <article class="card">
+          <h3>Reciclaje textil: pasos sencillos</h3>
+          <p>Convierte prendas viejas en nuevas piezas: ideas prácticas y creativas para reducir desperdicios.</p>
+          <a class="readmore" href="#">Leer más</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección carrito (simulación Sprint 2) -->
+    <section id="cart" class="container">
+      <h2>Carrito de Compras</h2>
+      <p class="muted">Aquí se mostrarán los productos seleccionados (funcionalidad en desarrollo).</p>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contact" class="container contact">
+      <h2>Contacto</h2>
+      <p class="muted">¿Tienes preguntas o quieres colaborar? Envíanos un mensaje.</p>
+      <form onsubmit="event.preventDefault(); alert('Gracias, tu mensaje fue enviado (demo).')">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-inner">
+      <p>Desarrollado por Aída Guadalupe Meza Gómez — 2025</p>
+      <p class="muted small">Proyecto académico | Tienda Ropa Sostenible</p>
+    </div>
+  </footer>
+
+  <!-- Accesibilidad -->
+  <script>
+    document.body.addEventListener('keydown', function(e){
+      if(e.key === 'Tab') document.documentElement.classList.add('show-focus');
+    });
+  </script>
+</body>
+</html>

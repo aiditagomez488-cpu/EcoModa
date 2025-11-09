@@ -1,0 +1,242 @@
+/* Paleta ecológica y ajustes visuales */
+:root {
+  --ecoGreen: #2f855a;
+  --ecoLight: #e6f6ef;
+  --ecoBeige: #f6f1ea;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+  --max-width: 1100px;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+  --trans: 0.25s ease;
+  --container-pad: 24px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* a. Requisito: propiedad box-sizing en html */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* b. Requisito: color y tipografía del body */
+body {
+  margin: 0;
+  background: linear-gradient(180deg, var(--ecoBeige) 0%, #ffffff 60%);
+  color: #1a202c;
+  font-size: 16px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--container-pad);
+}
+
+/* Encabezado */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.5));
+  box-shadow: var(--shadow);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--ecoGreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+.brand-name {
+  font-weight: 700;
+}
+.brand-tag {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Navegación */
+.nav a {
+  margin-left: 18px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color var(--trans);
+}
+.nav a:hover {
+  color: var(--ecoGreen);
+}
+
+/* Hero principal */
+.hero {
+  padding: 48px 0 24px;
+  text-align: center;
+}
+.site-title {
+  font-size: 32px;
+  margin: 0;
+  color: var(--ecoGreen);
+  letter-spacing: 0.3px;
+}
+.site-sub {
+  font-size: 18px;
+  margin-top: 12px;
+  color: var(--muted);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.fade-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Buscador */
+.search-section {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.search-form {
+  display: flex;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.search-form input[type="search"] {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(15,23,42,0.08);
+  box-shadow: var(--shadow);
+}
+.search-form button {
+  background: var(--ecoGreen);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--trans), opacity var(--trans);
+}
+.search-form button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Tarjetas */
+.cards {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 12px;
+}
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+  transition: transform var(--trans);
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card h3 {
+  margin: 10px 0 6px;
+  color: var(--ecoGreen);
+}
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+.readmore {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--ecoGreen);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Contacto */
+.contact form {
+  display: grid;
+  gap: 10px;
+  max-width: 640px;
+  margin-top: 12px;
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.06);
+}
+.contact button {
+  background: var(--ecoGreen);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--trans), opacity var(--trans);
+}
+.contact button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* Pie de página */
+.site-footer {
+  margin-top: 28px;
+  padding: 22px 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  text-align: center;
+  border-top: 1px solid rgba(15,23,42,0.03);
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 13px;
+}
+
+/* Responsividad */
+@media (max-width: 640px) {
+  .nav {
+    display: none;
+  }
+  .site-title {
+    font-size: 26px;
+  }
+  .header-inner {
+    padding: 8px 0;
+  }
+}

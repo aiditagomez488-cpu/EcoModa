@@ -1,0 +1,16 @@
+Sprint 2 – Registro e Inventario
+Duración: 5 días planificados (Sprint 2)
+Objetivos generales: Implementar la funcionalidad de registro de usuarios y diseñar la interfaz de administración de inventario, además de mejorar la accesibilidad del sitio agregando subtítulos a los videos y un buscador de artículos.
+
+    ID		Tarea					Rol		Estimado		   Estado			            Comentario
+S2 – T1		Diseñar formularios de registro/login		Front		4 horas		Completado	Formularios maquetados y validados a nivel HTML5.
+S2 – T2		Programar autenticación de usuarios		Back		6 horas		En progreso	Se simuló el proceso con formularios estáticos.
+S2 – T3		Diseñar interfaz del panel admin		Front		6 horas		Completado	Se realizó una maqueta limpia, enfocada en la gestión visual.
+S2 – T4		Programar CRUD de productos		Back		8 horas		Pendiente	Implementación futura con base de datos simulada.
+S2 – T5		Pruebas de registro e inventario		QA		4 horas		Completado	Prueba en navegadores para verificar compatibilidad y estilos.
+
+Resultado: Durante este sprint añadí subtítulos a los videos (accesibilidad), mejoré el buscador y logré un estilo más profesional y armónico. También comencé el diseño del panel de administración. Aunque la autenticación no está completamente funcional, quedó estructurada y preparada para integración futura.
+
+	Progreso estimado: 70%
+
+Reflexión: Este sprint fue un reto técnico y personal. Aprendí que el diseño no es solo lo que se ve, sino también cómo se siente y cómo facilita el acceso para todos. Los subtítulos y el buscador fueron mi forma de hacer que EcoModa sea más inclusiva. Me sentí muy orgullosa de ese avance.

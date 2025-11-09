@@ -1,0 +1,16 @@
+Sprint 3 – Pasarela de Pago
+Duración: 5 días planificados (Sprint 3)
+Objetivos generales: Diseñar la maqueta y estructura de la pasarela de pago, garantizando seguridad y claridad visual para el usuario. Además, realizar ajustes finales en tipografía, color y responsividad para entregar un producto pulido.
+
+   ID			Tarea				Rol		Estimado		  Estado			      Comentario
+S3 – T1		Integrar pasarela sandbox			Back		12 horas		Pendiente	Esperando integración real con backend.
+S3 – T2		Diseñar formulario de pago seguro		Front		5 horas		Completado	Maqueta visual terminada con diseño claro y minimalista.
+S3 – T3		Configurar validaciones y encriptación		Back		8 horas		En proceso	Se establecieron comentarios y estructura básica.
+S3 – T4		Pruebas de transacciones simuladas		QA		8 horas		Pendiente	Simulaciones planificadas, pero no ejecutadas.
+S3 – T5		Revisión de diseño y entrega final		QA		6 horas		Completado	Ajustes visuales finales, fuentes y contrastes.
+
+Resultado: La interfaz de pago fue diseñada con un enfoque en la confianza y la sostenibilidad visual. Aunque la pasarela no está activa, el diseño quedó preparado para integrarse fácilmente con una API segura. Además, realicé los últimos ajustes de color, tipografía y animaciones.
+
+	Progreso estimado: 60%
+
+Reflexión: Este sprint fue el cierre de un ciclo. Me hizo ver lo mucho que había avanzado y todo lo que aprendí, no solo en código, sino en organización y constancia. Aun cuando el backend sigue pendiente, ver la interfaz final me dio una sensación enorme de logro. EcoModa ahora luce como una tienda real, y eso me llena de orgullo.
